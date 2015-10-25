@@ -45,3 +45,25 @@ Grafana dashboard configuration can be found in [shimmer-grafana-dashboard.json]
 
 ![Shimmer Dashboard](shimmer-grafana-dashboard.jpg "Shimmer Dashboard")
 
+Loading of Data
+---------------
+
+Shimmer data from final CSV file can be replayed as live from current time
+using script [upload-from-static-csv.py](upload-from-static-csv.py). Run as:
+
+```
+python upload-from-static-csv.py static-data.csv
+```
+
+To capture live data from Shimmer, use Windows Shimmer client to save to
+CSV file. Then run script [upload-from-live-csv.py](upload-from-live-csv.py)
+at same time as:
+
+```
+python upload-from-live-csv.py live-data.csv
+```
+
+This uses fact that Windows Shimmer client deals with bluetooth to talk 
+to Shimmer, avoiding initial need to write dedicated bluetooth client from
+scratch.
+
