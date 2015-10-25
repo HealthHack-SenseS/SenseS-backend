@@ -40,3 +40,8 @@ Need to create a data source point Grafana at local InfluxDB. See:
 ![Data Source Configuration](GrafanaDataSourceSetup.jpg "Data Source Configuration")
 
 Password for InfluxDB is default of ``root``.
+
+Grafana dashboard configuration can be found in [shimmer-grafana-dashboard.json](shimmer-grafana-dashboard.json).
+
+![Shimmer Dashboard](shimmer-grafana-dashboard.jpg "Shimmer Dashboard")
+
